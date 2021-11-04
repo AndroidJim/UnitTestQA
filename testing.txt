@@ -1,0 +1,19 @@
+Unit Testing procedure for Checkout Smart App
+
+Application
+
+Simiple appliation which allows user to select a product and add it into the shopping list.
+
+
+Unit Testing
+
+Scenario 1 - single item add
+
+1) User finds product from product list
+2) User clicks the Add button -> Product is added to the basket
+
+Scenario 2 - multi item add
+1) User clicks the Add button (x2) -> two of the same products are added to the checkout
+2) User clicks remove ->  1 product is removed from the basket
+3) User clicks remove ->  anoother product is removed from the basket-> basket now empty
+
