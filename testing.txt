@@ -22,5 +22,15 @@ Integration test
 1) Click on product from list
 2) Product request fired to API AddProductDetails
 3) Product response received from API AddProductDetails (201 created)
-3) Product request fired to audit API AddProductAudit
-4) Audit data added to Database
+3) Product request fired to audit API AddProductAudit 
+4) API Response AddProductAudit  returned (201 created)
+
+
+System Test
+
+1) Click on product from list
+2) Product request fired to API AddProductDetails for product 123456
+3) Product response received from API AddProductDetails (201 created) -> product 123456 returned
+3) Product request fired to audit API AddProductAudit for product 123456 and user ABCDE
+4) Audit data added to Database -> correct values added to the database Product_Audit with current system date for product 123456 / user ABCDE
+
