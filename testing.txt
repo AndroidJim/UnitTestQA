@@ -17,3 +17,10 @@ Scenario 2 - multi item add
 2) User clicks remove ->  1 product is removed from the basket
 3) User clicks remove ->  anoother product is removed from the basket-> basket now empty
 
+Integration test
+
+1) Click on product from list
+2) Product request fired to API AddProductDetails
+3) Product response received from API AddProductDetails (201 created)
+3) Product request fired to audit API AddProductAudit
+4) Audit data added to Database
