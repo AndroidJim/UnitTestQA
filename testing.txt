@@ -34,3 +34,18 @@ System Test
 3) Product request fired to audit API AddProductAudit for product 123456 and user ABCDE
 4) Audit data added to Database -> correct values added to the database Product_Audit with current system date for product 123456 / user ABCDE
 
+
+User Acceptance Test (Cucumber Gherkin)
+
+Given A user in on the products page
+When The user clicks on a product (click on + button)
+Then The product should be added to the basket
+
+Given A user in on the products page
+When The user clicks on a product and selects multiple items (click on + buuton)
+Then The products should be added to the basket
+
+
+Given A user in on the products page
+When The user clicks on a product and deselects the item (clicks - button)
+Then The product should be removed from the basket 
